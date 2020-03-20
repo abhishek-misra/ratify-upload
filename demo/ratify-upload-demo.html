@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./ratify-upload.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center" style="padding-top: 35px;">
+            <div class="col-md-6">
+                <div class="card border-info">
+                    <div class="card-header bg-info">File Upload Demo</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">File</label>
+                                    <div class="col-sm-10">
+                                        <input type="file" id="fileDemo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src='./ratify-upload.js'></script>
+<script>
+    $(document).ready(function () {
+         $("#fileDemo").ratifyUpload();
+    }); 
+</script>
+
+</html>
